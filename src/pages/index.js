@@ -32,7 +32,7 @@ export default function Home() {
               <p className="my-4 text-base font-medium">
               I am a highly motivated Computer Science student currently studying final year in Vellore Institute of Technology, passionate about software development and emerging technologies. With a strong foundation in Java, Python, and full-stack development. Always eager to learn and create impactful projects that enhance user experiences while exploring new technologies, optimizing systems, and expanding my expertise in the evolving tech landscape.
               </p>
-              <p className="my-4 text-base font-medium">Explore my portfolio to see how I combine technical skills and creativity to create impactful solutions. Let's connect and bring innovative ideas to life!
+              <p className="my-4 text-base font-medium">Explore my portfolio to see how I combine technical skills and creativity to create impactful solutions. Let&apos;s connect and bring innovative ideas to life!
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link

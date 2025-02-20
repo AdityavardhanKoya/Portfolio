@@ -74,7 +74,6 @@ const FeaturedDesign = ({ type, title, summary, image, link, github }) => {
         <p className="my-2 font-medium text-dark ">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
-            <FigmaIcon />
           </Link>
           <Link
             href={link}
@@ -153,16 +152,6 @@ const projects = () => {
                 github="https://github.com/AdityavardhanKoya/Kanban_Board"
               />
             </div>
-            {/* <div className="col-span-12">
-              <FeaturedProject
-                title="Get-Wheels"
-                summary="Get-Wheels: Your go-to platform for hassle-free vehicle rentals. Choose from a diverse fleet, book with ease, and enjoy an unforgettable driving experience. Convenience and satisfaction guaranteed. Join us now!"
-                type="Project"
-                image={getwheels}
-                link="https://www.behance.net/gallery/158382641/Vehicle-Rental-Website"
-                github="https://www.figma.com/file/BZ2ysldi3a4boRuMeUkUqQ/Get-Wheles-(Community)?type=design&node-id=0%3A1&mode=design&t=34KocH3lYWeniQsQ-1"
-              />
-            </div> */}
           </div>
         </Layout>
       </main>
