@@ -5,6 +5,8 @@ import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Layout from "@/components/Layout";
+
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -21,7 +23,9 @@ export default function App({ Component, pageProps }) {
       >
         <NavBar />
         <AnimatePresence mode="wait">
+          <Layout>
           <Component key={router.asPath} {...pageProps} />
+          </Layout>
         </AnimatePresence>
         <Footer />
       </main>
