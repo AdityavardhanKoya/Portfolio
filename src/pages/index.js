@@ -36,7 +36,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
-                  href="https://drive.google.com/file/d/1X_mObhvNL9W-CbwP5lgOBkaQfoCtadjO/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1tvaMx0hB-nOGhHplFX2Xtbc16HFoBszn/view?usp=drive_link"
                   target={"_blank"}
                   rel = "noopener noreferrer"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark "
