@@ -96,10 +96,10 @@ const projects = () => {
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className="pt-8">
           <AnimatedText
             text="Ventures in Innovation!"
-            className="mb-16"
+            className="mb-8"
           />
           <div className="grid grid-cols-12 gap-24">
             <div className="col-span-12">

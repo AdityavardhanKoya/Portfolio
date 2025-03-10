@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { TwitterIcon, GithubIcon, LinkedInIcon, InstagramIcon, GmailIcon , LeetcodeIcon, FigmaIcon } from "./Icons";
+import { TwitterIcon, GithubIcon, LinkedInIcon, GmailIcon } from "./Icons";
 import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -78,15 +78,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
-          <InstagramIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com/AdityaVardhannn"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
-        >
+
           <TwitterIcon />
         </motion.a>
         {/* <motion.a
