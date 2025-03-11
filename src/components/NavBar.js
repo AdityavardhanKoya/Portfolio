@@ -54,7 +54,7 @@ const NavBar = () => {
           <GithubIcon />
         </motion.a>
         {/* <motion.a
-          href="https://leetcode.com/anantdubey/"
+          href=""
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -72,24 +72,14 @@ const NavBar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="https://www.instagram.com/adityavardhankoya/"
+          href="https://x.com/AdityaVardhannn"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
-
           <TwitterIcon />
         </motion.a>
-        {/* <motion.a
-          href="https://figma.com/@anantdubey"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
-        >
-          <FigmaIcon />
-        </motion.a> */}
       </nav>
     </header>
   );
