@@ -7,7 +7,7 @@ const Detail = ({ degree, time, institute, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-full md:w-[60%] mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -15,11 +15,11 @@ const Detail = ({ degree, time, institute, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: spring }}
       >
-        <h3 className="capitalize font-bold text-2xl">{degree}</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <h3 className="capitalize font-bold text-xl md:text-2xl">{degree}</h3>
+        <span className="capitalize font-medium text-dark/75 text-sm md:text-base">
           {time} | {institute}
         </span>
-        <p className="font-medium w-full">{info}</p>
+        <p className="font-medium w-full text-sm md:text-base">{info}</p>
       </motion.div>
     </li>
   );
@@ -32,14 +32,16 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-6xl mb-32 w-full text-center">Education</h2>
-      <div ref={ref} className="w-[75%] mx-auto relative">
+    <div className="my-16">
+      <h2 className="font-bold text-4xl md:text-6xl mb-16 md:mb-32 w-full text-center">
+        Education
+      </h2>
+      <div ref={ref} className="w-full md:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-28 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-4 md:left-28 top-0 w-[2px] md:w-[4px] h-full bg-dark origin-top"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-28">
+        <ul className="w-full flex flex-col items-start justify-between ml-8 md:ml-28">
           <Detail
             degree="Bachelor of Technology"
             time="2021-2025"

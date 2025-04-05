@@ -16,37 +16,44 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-5">
-          <div className="flex justify-between items-center w-full">
-            <div className="w-1/2">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full">
+            {/* Profile Image */}
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0">
               <Image
                 src={profilePic}
-                alt=""
-                className="w-3/4 h-auto rounded-lg"
+                alt="Aditya Vardhan"
+                className="w-3/4 sm:w-2/3 md:w-3/4 h-auto rounded-lg"
+                priority
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 flex flex-col items-start px-0 sm:px-6 md:px-8">
               <AnimatedText
                 text="Aditya Vardhan"
-                className="text-left"
+                className="text-left text-3xl sm:text-4xl md:text-5xl font-bold"
               />
-              <p className="my-4 text-base font-medium">
-              I am a highly motivated Computer Science student currently studying final year in Vellore Institute of Technology, passionate about software development and emerging technologies. With a strong foundation in Java, Python, and full-stack development. Always eager to learn and create impactful projects that enhance user experiences while exploring new technologies, optimizing systems, and expanding my expertise in the evolving tech landscape.
+              <p className="my-4 text-sm sm:text-base font-medium text-justify w-full">
+                I am a highly motivated Computer Science student currently studying final year in Vellore Institute of Technology, passionate about software development and emerging technologies. With a strong foundation in Java, Python, and full-stack development. Always eager to learn and create impactful projects that enhance user experiences while exploring new technologies, optimizing systems, and expanding my expertise in the evolving tech landscape.
               </p>
-              <p className="my-4 text-base font-medium">Explore my portfolio to see how I combine technical skills and creativity to create impactful solutions. Let&apos;s connect and bring innovative ideas to life!
+              <p className="my-4 text-sm sm:text-base font-medium text-justify w-full">
+                Explore my portfolio to see how I combine technical skills and creativity to create impactful solutions. Let&apos;s connect and bring innovative ideas to life!
               </p>
-              <div className="flex items-center self-start mt-2">
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center mt-4 gap-4">
                 <Link
                   href="https://drive.google.com/file/d/1tvaMx0hB-nOGhHplFX2Xtbc16HFoBszn/view?usp=drive_link"
-                  target={"_blank"}
-                  rel = "noopener noreferrer"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-sm sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                 >
-                  Resume <LinkArrow className={"w-6 m-1"} />
+                  Resume <LinkArrow className="w-5 sm:w-6 ml-2" />
                 </Link>
                 <Link
                   href="mailto:adityavardhan.koya@gmail.com"
-                  target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize underline "
+                  target="_blank"
+                  className="text-sm sm:text-lg font-medium underline"
                 >
                   Contact
                 </Link>

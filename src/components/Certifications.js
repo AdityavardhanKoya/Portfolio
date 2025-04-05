@@ -9,7 +9,7 @@ const Detail = ({ title, time, provider, link }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-full md:w-[60%] mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -17,17 +17,17 @@ const Detail = ({ title, time, provider, link }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: spring }}
       >
-        <h3 className="capitalize font-bold text-2xl">{title}</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <h3 className="capitalize font-bold text-xl md:text-2xl">{title}</h3>
+        <span className="capitalize font-medium text-dark/75 text-sm md:text-base">
           {time} | {provider}
         </span>
         <div className="flex items-center self-start mt-2">
           <Link
             href={link}
             target={"_blank"}
-            className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark "
+            className="flex items-center bg-dark text-light p-2 px-4 md:p-2.5 md:px-6 rounded-lg text-base md:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
           >
-            View <LinkArrow className={"w-6 m-1"} />
+            View <LinkArrow className={"w-5 md:w-6 m-1"} />
           </Link>
         </div>
       </motion.div>
@@ -42,16 +42,16 @@ const Certifications = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
-      <h1 className="font-bold text-6xl mb-32 w-full text-center">
+    <div className="my-16">
+      <h1 className="font-bold text-4xl md:text-6xl mb-16 md:mb-32 w-full text-center">
         Certifications
       </h1>
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-full md:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-28 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-4 md:left-28 top-0 w-[2px] md:w-[4px] h-full bg-dark origin-top"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-28">
+        <ul className="w-full flex flex-col items-start justify-between ml-8 md:ml-28">
           <Detail
             title="Mern Full Stack"
             time="August 2023 - November 2023"

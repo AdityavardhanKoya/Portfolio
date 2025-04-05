@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold m bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute"
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-2 px-4 shadow-dark cursor-pointer absolute text-sm md:text-base md:py-3 md:px-6"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
-      viewport={{once: true}}
+      viewport={{ once: true }}
       transition={{ duration: 1.5 }}
     >
       {name}
@@ -18,11 +18,11 @@ const Skill = ({ name, x, y }) => {
 
 const Skills = () => {
   return (
-    <>
-      <h2 className="font-bold text-6xl mt-64 w-full text-center">Skills</h2>
-      <div className="w-full h-screen relative flex justify-center items-center rounded-full bg-circularLight">
+    <div className="relative"> {/* Removed mt-64 to reduce gap */}
+      <h2 className="font-bold text-4xl md:text-6xl mb-8 w-full text-center">Skills</h2>
+      <div className="w-full h-[50vh] md:h-screen relative flex justify-center items-center rounded-full bg-circularLight">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold m bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-6 md:p-8 shadow-dark cursor-pointer text-lg md:text-xl"
           whileHover={{ scale: 1.05 }}
         >
           Skills
@@ -38,7 +38,7 @@ const Skills = () => {
         <Skill name="R" x="25vw" y="-17vw" />
         <Skill name="Matlab" x="-28vw" y="15vw" />
       </div>
-    </>
+    </div>
   );
 };
 
