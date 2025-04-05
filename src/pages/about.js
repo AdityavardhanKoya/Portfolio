@@ -59,7 +59,7 @@ const about = () => {
           </div>
 
           {/* Skills Section with increased top margin */}
-          <div className="mt-8 w-full"> s
+          <div className="mt-8 w-full"> 
             <Skills />
           </div>
 
