@@ -47,7 +47,7 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium text-sm sm:text-base text-justify">
-                Hey there! I'm Aditya Vardhan, currently pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology with passion for innovation and continuous learning. With hands-on experience in full-stack development, cloud computing, and software engineering.
+                Hey there! I&apos;m Aditya Vardhan, currently pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology with passion for innovation and continuous learning. With hands-on experience in full-stack development, cloud computing, and software engineering.
               </p>
               <p className="my-2 font-medium text-sm sm:text-base text-justify">
                 I thrive in dynamic environments, leveraging my skills to drive meaningful contributions while continuously exploring new technologies and challenges. My goal is to innovate and make a lasting impact in technology.
