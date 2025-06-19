@@ -92,8 +92,8 @@ const projects = () => {
                 summary="Developed a user-friendly Online Expense Tracker using the MERN stack. Implemented secure authentication with CRUD operations and used React.js for a responsive front end. Built the back end with Node.js and Express.js for smooth communication with MongoDB. Ensured efficient data storage and scalability."
                 type="Featured Project"
                 image={expensetracker}
-                link=""
-                github=""
+                link="https://github.com/AdityavardhanKoya/Expense_Tracker"
+                github="https://github.com/AdityavardhanKoya/Expense_Tracker"
               />
             </div>
 

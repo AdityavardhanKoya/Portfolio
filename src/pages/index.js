@@ -43,7 +43,7 @@ export default function Home() {
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center mt-4 gap-4">
                 <Link
-                  href="https://drive.google.com/file/d/1tvaMx0hB-nOGhHplFX2Xtbc16HFoBszn/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1JlOHCp5ZmtkRnb2N3TEkxwGrxRjKQNYF/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-sm sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
